@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-register-partials",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Metalsmith plugin for registering Handlebars partials.",
   "main": "index.js",
   "license": "MIT",
