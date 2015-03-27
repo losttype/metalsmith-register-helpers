@@ -8,6 +8,7 @@ A Metalsmith plugin for registering Handlebars partials.
 
 Install via npm and then add the `metalsmith-register-partials` key to your `metalsmith.json` plugins, like so:
 
+```
 {
   "plugins": {
     "metalsmith-register-partials": {
@@ -15,6 +16,7 @@ Install via npm and then add the `metalsmith-register-partials` key to your `met
     }
   }
 }
+```
 
 This will register all partials in the specified directory and use the first part of the filename as the partial name.
 
