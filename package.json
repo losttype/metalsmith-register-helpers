@@ -1,30 +1,19 @@
 {
-  "name": "metalsmith-register-partials",
-  "version": "1.0.1",
-  "description": "A Metalsmith plugin for registering Handlebars partials.",
+  "name": "metalsmith-register-helpers",
+  "version": "0.1.0",
+  "description": "A Metalsmith plugin for registering Handlebars helpers.",
   "main": "index.js",
   "license": "MIT",
-  "author": {
-    "name": "Lin Clark",
-    "email": "lin.w.clark@gmail.com",
-    "url": "https://github.com/linclark"
-  },
-  "scripts": {
-    "test": "node test.js"
-  },
+  "repository": "git://github.com/losttype/metalsmith-register-helpers.git",
+  "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
+  "contriblutors": [
+    "Lin Clark <lin.w.clark@gmail.com> (https://github.com/linclark)"
+  ],
   "keywords": [
     "metalsmith,",
     "handlebars,",
-    "partials"
+    "helpers"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/linclark/metalsmith-register-partials.git"
-  },
-  "homepage": "https://github.com/linclark/metalsmith-register-partials",
-  "bugs": {
-    "url": "https://github.com/linclark/metalsmith-register-partials/issues"
-  },
   "dependencies": {
     "extend": "^2.0.0",
     "handlebars": "^3.0.1"

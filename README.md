@@ -1,8 +1,6 @@
-# metalsmith-register-partials
+# metalsmith-register-helpers
 
-[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
-
-A Metalsmith plugin for registering Handlebars partials.
+A Metalsmith plugin for registering Handlebars helpers.
 
 ## CLI Usage
 
@@ -11,15 +9,28 @@ Install via npm and then add the `metalsmith-register-partials` key to your `met
 ```
 {
   "plugins": {
-    "metalsmith-register-partials": {
-      "directory": "path/to/partials"
+    "metalsmith-register-helpers": {
+      "directory": "path/to/helpers"
     }
   }
 }
 ```
 
-This will register all partials in the specified directory and use the first part of the filename as the partial name.
+This will register all helpers in the specified directory, and use the first part of the filename as the helper name. For example, you could add a limit helper in the file `limit.js`:
+
+```js
+module.exports = function(collection, limit, start) {
+  return collection.slice( start, limit + 1 );
+}
+```
+
+And then access it in your templates:
+
+
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/linclark/metalsmith-register-partials/blob/master/LICENSE.md) for details.
+[The MIT License (MIT)](LICENSE.md)
+
+Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com)
+Copyright © 2015 Lin Clark
