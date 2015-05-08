@@ -16,17 +16,42 @@ Install via npm and then add the `metalsmith-register-partials` key to your `met
 }
 ```
 
-This will register all helpers in the specified directory, and use the first part of the filename as the helper name. For example, you could add a limit helper in the file `limit.js`:
+This will register all helpers in the specified directory, and use the first part of the filename as the helper name. For example, you could add a JSON helper in the file `json.js`:
 
 ```js
-module.exports = function(collection, limit, start) {
-  return collection.slice( start, limit + 1 );
-}
+module.exports = (function(content) {
+  return JSON.stringify(content);
+});
 ```
 
 And then access it in your templates:
 
+```html
+<pre><code>{{ json myJSONMetadata }}</code></pre>
+```
 
+## Adding Handlebars Helpers
+
+There are lots of helpers you could try this with in the [Handlebars Helpers](https://github.com/assemble/handlebars-helpers) library. For example, add the `capitalizeFirst` helper into `helpers/ellipsis.js`:
+
+```js
+/**
+ * capitalizeFirst.js
+ * http://git.io/vUJU2
+ */
+
+module.exports = function (str) {
+    if(str && typeof str === "string") {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+  }
+```
+
+Now, you can access it in your templates:
+
+```html
+<h1>{{ capitalizeFirst "the lost typo devision." }}</h1>
+```
 
 ## License
 
