@@ -57,5 +57,5 @@ Now, you can access it in your templates:
 
 [The MIT License (MIT)](LICENSE.md)
 
-Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com)
-Copyright © 2015 Lin Clark
+Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com)<br/>
+Copyright © 2015 [Lin Clark](http://lin-clark.com/)

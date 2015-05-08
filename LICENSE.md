@@ -1,6 +1,7 @@
 The MIT License (MIT)
-Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com)
-Copyright © 2015 Lin Clark
+
+Copyright © 2015 [Kenneth Ormandy](http://kennethormandy.com)<br/>
+Copyright © 2015 [Lin Clark](http://lin-clark.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
