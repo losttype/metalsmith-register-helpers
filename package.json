@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-register-helpers",
   "description": "A Metalsmith plugin for registering Handlebars helpers.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "repository": "git://github.com/losttype/metalsmith-register-helpers.git",
