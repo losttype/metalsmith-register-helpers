@@ -18,5 +18,12 @@
   ],
   "dependencies": {
     "extend": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: No test specified…yet! Pull requests on losttype/metalsmith-register-helpers are greatly appreciated.\" && exit 0",
+    "posttest": "standard"
+  },
+  "devDependencies": {
+    "standard": "^4.4.0"
   }
 }

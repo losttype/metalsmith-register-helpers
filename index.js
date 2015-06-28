@@ -1,26 +1,26 @@
-var extend = require('extend');
-var fs = require('fs');
-var Handlebars = require('handlebars');
+var extend = require('extend')
+var fs = require('fs')
+var Handlebars = require('handlebars')
 
-module.exports = plugin;
+module.exports = plugin
 
-function plugin(options) {
+function plugin (options) {
   options = extend({
     directory: 'helpers'
-  }, options || {});
+  }, options || {})
 
-  return function(files, metalsmith, done) {
-    fs.readdir(metalsmith.path(options.directory), function(err, files) {
-      if(err) throw err;
+  return function (files, metalsmith, done) {
+    fs.readdir(metalsmith.path(options.directory), function (err, files) {
+      if (err) throw err
 
-      files.forEach(function(file){
-        var templateName = file.split('.').shift();
+      files.forEach(function (file) {
+        var templateName = file.split('.').shift()
         var path = metalsmith.path(options.directory, file)
-        var helperContents = require(path);
-        Handlebars.registerHelper(templateName, helperContents);
-      });
+        var helperContents = require(path)
+        Handlebars.registerHelper(templateName, helperContents)
+      })
 
-      done();
-    });
-  };
+      done()
+    })
+  }
 }
