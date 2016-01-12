@@ -6,7 +6,7 @@ A Metalsmith plugin for registering Handlebars helpers.
 
 Install via npm and then add the `metalsmith-register-helpers` key to your `metalsmith.json` plugins, like so:
 
-```
+```json
 {
   "plugins": {
     "metalsmith-register-helpers": {
