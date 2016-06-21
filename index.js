@@ -14,10 +14,22 @@ function plugin (options) {
       if (err) throw err
 
       files.forEach(function (file) {
-        var templateName = file.split('.').shift()
-        var path = metalsmith.path(options.directory, file)
-        var helperContents = require(path)
-        Handlebars.registerHelper(templateName, helperContents)
+        var helperContents,
+            path,
+            templateName;
+
+          path = metalsmith.path(options.directory, file);
+          helperContents = require(path);
+
+          switch (typeof helperContents) {
+          case "function":
+            templateName = file.split('.').shift();
+            Handlebars.registerHelper(templateName, helperContents);
+            break;
+          case "object":
+            Handlebars.registerHelper(helperContents);
+            break;
+          }
       })
 
       done()
