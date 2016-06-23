@@ -32,7 +32,7 @@ And then access it in your templates:
 
 ## Adding Handlebars Helpers
 
-There are lots of helpers you could try this with in the [Handlebars Helpers](https://github.com/assemble/handlebars-helpers) library. For example, add the `capitalizeFirst` helper into `helpers/ellipsis.js`:
+There are lots of helpers you could try this with in the [Handlebars Helpers](https://github.com/assemble/handlebars-helpers) library. For example, add the `capitalizeFirst` helper into `_helpers/ellipsis.js`:
 
 ```js
 /**
@@ -51,6 +51,24 @@ Now, you can access it in your templates:
 
 ```html
 <h1>{{ capitalizeFirst "the lost typo devision." }}</h1>
+```
+
+You may also include multiple helpers in a single file:
+
+```js
+module.exports = {
+  capitalizeFirst: function (str) {
+    if (str && typeof str === "string") {
+      return str.charAt(0).toUpperCase() + str.slice(1)
+    }
+  },
+  json: function (context) {
+    return JSON.parse(context);
+  },
+  someOtherHelper: function () {
+    // Etc.
+  }
+}
 ```
 
 ## Adding `devDependencies` as helpers
