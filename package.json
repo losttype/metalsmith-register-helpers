@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "standard": "^4.4.0"
+  },
+  "peerDependencies": {
+    "handlebars": ">1.0.0"
   }
 }
