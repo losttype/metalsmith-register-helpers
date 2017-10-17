@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-register-helpers",
   "description": "A Metalsmith plugin for registering Handlebars helpers.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "index.js",
   "license": "MIT",
   "repository": "git://github.com/losttype/metalsmith-register-helpers.git",
@@ -10,7 +10,8 @@
     "Lin Clark       <lin.w.clark@gmail.com>    (http://lin-clark.com)",
     "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
     "Bryce Kahle     <bkahle@gmail.com>         (http://brycekahle.com)",
-    "Steve Brush"
+    "Steve Brush",
+    "Nicolai Süper"
   ],
   "keywords": [
     "metalsmith",
