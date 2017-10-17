@@ -32,7 +32,7 @@ And then access it in your templates:
 
 ## Adding Handlebars Helpers
 
-There are lots of helpers you could try this with in the [Handlebars Helpers](https://github.com/assemble/handlebars-helpers) library. For example, add the `capitalizeFirst` helper into `_helpers/ellipsis.js`:
+There are lots of helpers you could try this with in the [Handlebars Helpers](https://github.com/assemble/handlebars-helpers) library. For example, add the `capitalizeFirst` helper into `_helpers/capitalizeFirst.js`:
 
 ```js
 /**
