@@ -22,13 +22,13 @@ function plugin (options) {
         helperContents = require(path)
 
         switch (typeof helperContents) {
-        case 'function':
-          templateName = file.split('.').shift()
-          Handlebars.registerHelper(templateName, helperContents)
-          break
-        case 'object':
-          Handlebars.registerHelper(helperContents)
-          break
+          case 'function':
+            templateName = helperContents.name || file.split('.').shift()
+            Handlebars.registerHelper(templateName, helperContents)
+            break
+          case 'object':
+            Handlebars.registerHelper(helperContents)
+            break
         }
       })
 
