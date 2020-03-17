@@ -20,14 +20,14 @@
     "helpers"
   ],
   "dependencies": {
-    "extend": "^3.0.1"
+    "extend": "^3.0.2"
   },
   "scripts": {
     "test": "echo \"Error: No test specified…yet! Pull requests on losttype/metalsmith-register-helpers are greatly appreciated.\" && exit 0",
     "posttest": "standard"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "standard": "^14.3.3"
   },
   "peerDependencies": {
     "handlebars": ">1.0.0"
